@@ -406,7 +406,7 @@
           bar.css({ height: barHeight + 'px' });
 
           // hide scrollbar if content is not long enough
-          var display = barHeight == me.outerHeight() ? 'none' : 'block';
+          var display = barHeight >= me.outerHeight() ? 'none' : 'block';
           bar.css({ display: display });
         }
 
